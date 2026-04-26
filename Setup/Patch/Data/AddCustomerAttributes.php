@@ -39,7 +39,7 @@ class AddCustomerAttributes implements DataPatchInterface, PatchRevertableInterf
     {
         $customerSetup->addAttribute(Customer::ENTITY, 'breeder_status', [
             'type'                  => 'int',
-            'label'                 => 'Status hodowcy',
+            'label'                 => 'Breeder Status',
             'input'                 => 'boolean',
             'required'              => false,
             'default'               => '0',
@@ -67,7 +67,7 @@ class AddCustomerAttributes implements DataPatchInterface, PatchRevertableInterf
     {
         $customerSetup->addAttribute(Customer::ENTITY, 'wholesaler_status', [
             'type'                  => 'int',
-            'label'                 => 'Status hurtownika',
+            'label'                 => 'Wholesaler Status',
             'input'                 => 'boolean',
             'required'              => false,
             'default'               => '0',
@@ -95,7 +95,7 @@ class AddCustomerAttributes implements DataPatchInterface, PatchRevertableInterf
     {
         $customerSetup->addAttribute(Customer::ENTITY, 'admin_comments', [
             'type'                  => 'text',
-            'label'                 => 'Uwagi (dla administratora)',
+            'label'                 => 'Admin Comments',
             'input'                 => 'textarea',
             'required'              => false,
             'default'               => '',

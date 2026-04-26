@@ -2,7 +2,6 @@
     "name": "groomershop/module-address-fields",
     "description": "GroomerShop Additional Customer Fields (breeder status, wholesaler status, admin comments)",
     "type": "magento2-module",
-    "version": "1.0.0",
     "require": {
         "php": ">=8.4",
         "magento/framework": "*",

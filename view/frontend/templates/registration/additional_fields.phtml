@@ -1,0 +1,36 @@
+<?php
+/**
+ * @var \Magento\Framework\View\Element\Template $block
+ * @var \Magento\Framework\Escaper $escaper
+ */
+?>
+<fieldset class="fieldset create account" id="fieldset-groomershop-status">
+    <legend class="legend">
+        <span><?= $escaper->escapeHtml(__('Additional Information')) ?></span>
+    </legend>
+
+    <div class="field choice">
+        <?php /* Hidden input ensures value=0 is submitted when checkbox is unchecked */ ?>
+        <input type="hidden" name="breeder_status" value="0"/>
+        <input type="checkbox"
+               name="breeder_status"
+               id="breeder_status"
+               value="1"
+               class="checkbox"/>
+        <label class="label" for="breeder_status">
+            <span><?= $escaper->escapeHtml(__('Apply for breeder status (registered breeders only)')) ?></span>
+        </label>
+    </div>
+
+    <div class="field choice">
+        <input type="hidden" name="wholesaler_status" value="0"/>
+        <input type="checkbox"
+               name="wholesaler_status"
+               id="wholesaler_status"
+               value="1"
+               class="checkbox"/>
+        <label class="label" for="wholesaler_status">
+            <span><?= $escaper->escapeHtml(__('Apply for wholesale customer status (industry-related companies only)')) ?></span>
+        </label>
+    </div>
+</fieldset>

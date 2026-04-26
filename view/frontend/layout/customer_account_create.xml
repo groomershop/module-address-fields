@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!--
+            "form.additional.info" is a container defined inside "customer_register_form" block
+            in Magento_Customer::customer_account_create.xml and rendered by the register template.
+        -->
+        <referenceContainer name="form.additional.info">
+            <block class="Magento\Framework\View\Element\Template"
+                   name="groomershop.addressfields.registration"
+                   template="GroomerShop_AddressFields::registration/additional_fields.phtml"
+                   before="-"/>
+        </referenceContainer>
+    </body>
+</page>
